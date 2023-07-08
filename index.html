@@ -1,23 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Training blogs</title>
+    <title>Training Blogs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: aliceblue;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+
+        header {
+            width: 100vw;
+            background-color: black;
+            height: 4rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-image: none;
+        }
+
+        .name {
+            font-size: 2rem;
+            float: left;
+            background: none;
+            color: white;
+        }
+
+        .name::after {
+            content: "";
+            clear: both;
+        }
+        
+        a{
+            text-decoration: none;
+            background: none;
+        }
+        .name1{
+            background: none;
+        }
+        .abouts {
+            /* display: flex; */
+            width: 100%;
+            top: 9px;
+            color: white;
+            /* flex-direction: row-reverse; */
+            /* text-align: end; */
+            position: relative;
+            left: 29rem;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>INTRODUCTION</h1>
-    <p>Hello,my name is Shobhit Mittal and i am a Medical student by profession . Here i am pursuing my interest in building websites with the help of my mentor and this is the very begining of my journey. </p>
-    <h2>Topics Covered</h2>
-    <ul>
-        <li>The Box Model</li>
-        <li>Sizing Elements</li>
-        <li>Overflowing</li>
-        <li>Measurement Unites</li>
-        <li>Positioning</li>
-        <li>Floating Elements</li>
-    </ul>
-    <h2>Exercises</h2>
-     <a href="exercise-1.html">Exercise-1</a>
+    <HEADER>
+        <div class="name1" ><a href="https://websitedevelpoment.github.io/blog/" class="name">SHOBHIT'S BLOGS</a>
+    <a class="abouts" href="about.html">ABOUT</a></div>
+    </HEADER>
+   
 </body>
-</html
+
+</html>
