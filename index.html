@@ -10,76 +10,104 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-image: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
             color: aliceblue;
         }
 
         body {
-            width: 100%;
+            min-width: 100%;
             height: 100vh;
             display: flex;
+            background-image: url(https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             flex-direction: column;
             /* justify-content: center; */
         }
 
-        header {
-            width: 100vw;
+        nav {
+            min-width: 100%;
             background-color: black;
-            height: 7rem;
+            height: 4rem;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             position: relative;
+            padding: 0 136px 0 86px;
             background-image: none;
         }
 
         .name {
             font-size: 2rem;
-            float: left;
             background: none;
             color: white;
         }
 
-        .name::after {
-            content: "";
-            clear: both;
-        }
-        
-        a{
+        a {
             text-decoration: none;
             background: none;
         }
-        .name1{
+
+        .name1 {
             background: none;
+            /* position: absolute; */
         }
+
+        /* .about1{
+    /* display: flex; */
+    /* align-self: center; */
+        /* } */ */
         .abouts {
             /* display: flex; */
             width: 100%;
-            top: 9px;
             color: white;
             /* flex-direction: row-reverse; */
             /* text-align: end; */
-            position: relative;
-            left: 29rem;
+            /* position: relative; */
+            /* left: 50px; */
+            right: 4rem;
+            /* justify-content: flex-end; */
         }
-        main{
+
+        main {
             background: none;
         }
 
+        h1{
+            padding-top: 5rem;
+            align-self: center;
+        }
+        .days {
+            width: 100%;
+            display: flex;
+            padding-top: 2rem;
+            font-size: 20px;
+            line-height: 3rem;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .day2{
+            position: relative;
+            right: 4px;
+        }
+        
     </style>
 </head>
+<nav>
+    <div class="name1"><a href="https://websitedevelpoment.github.io/blog/" class="name">SHOBHIT'S BLOGS</a></div>
+    <span class="about1"><a class="abouts" href="about.html">ABOUT</a></span>
+</nav>
 
 <body>
-    <HEADER>
-        <div class="name1" ><a href="https://websitedevelpoment.github.io/blog/" class="name">SHOBHIT'S BLOGS</a>
-    <a class="abouts" href="about.html">ABOUT</a></div>
-    </HEADER>
-   <main>
-  <a href="day1.html">Day 1 of learning advance html</a>
-   </main>
+    <h1>
+        Welcome,Everyone.Here are My Links For My Training on Daily Basis
+    </h1>
+<div class="days">
+<div class="day1"><li><a href="day1.html">Day 1 of learning advance html</a></li></div>
+<div class="day2"><li><a href="day2.html">Day 2 of My Advance training</a></li></div>
+</div>
+
 </body>
 
 </html>
