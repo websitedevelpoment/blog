@@ -10,30 +10,31 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            color: aliceblue;
         }
 
         body {
             min-width: 100%;
             height: 100vh;
             display: flex;
-            background-image: url(https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
+            background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxvZyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
             flex-direction: column;
+            background-size: cover;
+            background-repeat: no-repeat;
             /* justify-content: center; */
+            text-align: left;
         }
 
         nav {
-            min-width: 100%;
-            background-color: black;
+            width: 100%;
+            background: black;
+            background-size: 100vw;
             height: 4rem;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             position: relative;
-            padding: 0 136px 0 86px;
+            /* padding: 0 136px 0 86px; */
             background-image: none;
         }
 
@@ -46,6 +47,7 @@
         a {
             text-decoration: none;
             background: none;
+            color: white;
         }
 
         .name1 {
@@ -55,9 +57,9 @@
 
         /* .about1{
     /* display: flex; */
-    /* align-self: center; */
-        /* } */ */
-        .abouts {
+        /* align-self: center; */
+        /* } */
+        */ .abouts {
             /* display: flex; */
             width: 100%;
             color: white;
@@ -73,10 +75,13 @@
             background: none;
         }
 
-        h1{
+        h1 {
             padding-top: 5rem;
+            padding-left: 3rem;
             align-self: center;
+            width: 100%;
         }
+
         .days {
             width: 100%;
             display: flex;
@@ -84,16 +89,24 @@
             font-size: 2rem;
             line-height: 3rem;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-        }
-        .day2{
+            left: 9rem;
             position: relative;
-            right: 6px;
         }
-        .day3{
+
+        .day2 {
             position: relative;
-            right: 65px;
+            /* right: 6px; */
+        }
+
+        .day3 {
+            position: relative;
+            /* right: 65px; */
+        }
+
+        .dayslink {
+            color: black;
         }
     </style>
 </head>
@@ -106,11 +119,20 @@
     <h1>
         Welcome,Everyone.Here are My Links For My Training on Daily Basis
     </h1>
-<div class="days">
-<div class="day1"><li><a href="day1.html">Day 1 of learning advance html</a></li></div>
-<div class="day2"><li><a href="day2.html">Day 2 of My Advance training</a></li></div>
-<div class="day3"><li><a href="day3.html">Day 3 of learning css</a></li></div>
-</div>
+    <div class="days">
+        <div class="day1">
+            <li><a class="dayslink" href="day1.html">Day 1 </a></li>
+        </div>
+        <div class="day2">
+            <li><a class="dayslink" href="day2.html">Day 2 </a></li>
+        </div>
+        <div class="day3">
+            <li><a class="dayslink" href="day3.html">Day 3 </a></li>
+        </div>
+        <div class="day4">
+            <li><a class="dayslink" href="day4.html">Day 4 </a></li>
+        </div>
+    </div>
 
 </body>
 
