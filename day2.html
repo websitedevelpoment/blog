@@ -15,10 +15,10 @@
 
         .main {
             background: none;
-            width: 50%;
+            width: 100%;
             height: 100%;
             box-sizing: border-box;
-            padding:10px 50px;
+            padding: 10px 50px;
         }
 
         A {
@@ -29,48 +29,105 @@
         div.about {
             position: relative;
         }
-        p{
+
+        .heading-paragraph{
             font-size: 21px;
+            text-transform: capitalize;
         }
-.overview{
-    padding: 0 0 0 50px;
-    text-transform: uppercase;
-}
+        .explain{
+            font-size: 21px;
+            margin: 5px 0px;
+        }
+
+        .overview {
+            padding: 0 0 0 50px;
+        }
+
         ul {
             padding: 10px;
             font-size: 20px;
         }
-        .heading{
-text-transform: uppercase;
-display: flex;
-justify-content: space-around;
+        .overview-heading{
+            text-transform: uppercase;
         }
-        footer{
+
+        .heading {
+            text-transform: uppercase;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        footer {
             display: flex;
             justify-content: center;
         }
-        h2{
+
+        h2 {
             text-transform: uppercase;
+        }
+
+        li {
+            font-weight: 600;
+            text-transform: capitalize;
         }
     </style>
 </head>
 
-<body><h1 class="heading">day2</h1>
-    
+<body>
+    <h1 class="heading">day2</h1>
+
     <div class="overview">
-    <h1>overview</h1>
-    <p>Today's is an interesting day as i got to know so much about flexbox, grid and i also read about a new topic i.e.hidden elements.All thanks to my mentor for guiding me and also to ryaz to gave me this oppurtunity.on the otherhand,I also find some difficulties in setting up the blog pages and with the grid but i am pretty much sure that i can overcome these problem sooner </p></div>
+        <h1 class="overview-heading">overview</h1>
+        <p class="heading-paragraph">Today's is an interesting day as i got to know so much about flexbox, grid and i also read about a new topic
+            i.e.hidden elements.All thanks to my mentor for guiding me and also to ryaz to gave me this oppurtunity.on
+            the otherhand,I also find some difficulties in setting up the blog pages and with the grid but i am pretty
+            much sure that i can overcome these problem sooner </p>
+    </div>
     <div class="main">
         <h1>1)Topics Covered</h1>
         <ul>
             <li>managed my blog pages</li>
-            <li>flexbox</li>
-            <li>Grid</li>
-            <li>Media Queries</li>
+            <li>position -</li>
+            <p class="explain">static (The default value),
+            relative (normal position),
+            absolute (element's positioned parent),
+                fixed (relative to the viewport),
+                z-index 1 (change the stacking order of an element),</p>
+            <li>float-</li>
+            <p class="explain">
+            left,right,both
+            </p class="explain">
+            <li>flexbox -</li>
+            <p class="explain">display: flex;(enable the flex layout),
+                flex-direction:column;(row, column),
+                justify-content: center;(along the main axis),
+                align-items: (center  cross axis),
+                flex-wrap: wrap,
+                align-content: center;(along the cross axis)</p>
+            <li>Item property -</li>
+            <p class="explain">align-self: center;(overwrite the alignment),
+            flex-basis: 10rem; (The initial size of an item),
+            flex-grow: 1; (The growth factor),
+                flex-shrink: 0;(The shrink factor),
+                flex: 0 1 10rem; Shorthand (grow shrink basis)</p>
+            <li>Grid -</li>
+            <p class="explain">display: grid;,
+                grid-template-rows: repeat(3, 100px);,
+                grid-template-columns: repeat(2, 100px);,
+                grid-template: repeat(3, 100px) / repeat(2, 100px);,
+                grid-template-areas:
+                “header header”
+                “sidebar main”
+                “footer footer”;,</p>
+            <li>Media Queries -</li> 
+            <p class="explain">@media screen and (min-width: 500px) {}
+            @media screen and (min-width: 500px) and (max-width: 700px) {}
+            @media print{}
+        </p>
         </ul>
         <br>
         <h1>2)Exercises</h1>
-       <li><a href="exercise-1.html" style="font-size:2rem;">exercise-1</a></li> 
+        <li><a href="exercise-1.html" style="font-size:2rem;">exercise-1</a></li>
     </div>
     <footer>
         <h2>
