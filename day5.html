@@ -72,29 +72,61 @@
     <h1 class="heading">day5</h1>
     <div class="overview">
         <h1>overview</h1>
-        <p>hi,this is my 5rd day at ryaz Training and i learned about images and forms</p>
+        <p>hi,this is my 5rd day at ryaz Training and i learned about how to apply an image in a background, how to
+            apply filters on image, how to manage the issue of screen resolution and how to support the high-density
+            screen </p>
     </div>
     <div class="main">
         <h1>1)Topics Covered</h1>
         <ul>
-            <li></li>
-            <p>font-family, font-size, font-weight, font-style</p>
-            <li>vertical spacing:-</li>
-            <p>margin, line-height</p>
-            <li>horizontal spacing:-</li>
-<p>letter-spacing, word-spacing, width</p>
-<li>formatting text:-</li>
-<p> text-align, text-indent, text-decoration, text-transform, white-space, direction </p>
-<li>
-    multi-column text:-
-</li>
-<p>column-count: 2;
-    column-gap: 2rem;
-    column-rule: 3px dotted #999;</p>
+            <li>background-image:-</li>
+            <p>background: url(),
+                background-repeat,
+                background-position: 100px 100px,
+                background-size,
+                background-attachment: fixed</p>
+            <li>filters:-</li>
+            <p>filter: grayscale(70%),
+                blur(3px),
+                brightness(0.5),
+                contrast(200%),
+                drop-shadow(10px 10px 10px grey),
+                hue-rotate(90deg),
+                invert(50%),
+                saturate(25%),
+                sepia(50%),
+                opacity(50%),
+                grayscale(70%) blur(3px)</p>
+            <li>clipping:-</li>
+            <p>clip-path: polygon(50% 0%, ...)</p>
+            <li>supporting high-density screen-</li>
+            <p> srcset=“
+                images 1x,
+                images 2x,
+                images 3x
+                ”
+                src=“images.jpg”
+                </p>
+            <li>
+                resolution switching:-
+            </li>
+            <p>
+                srcset=“
+                images.jpg 400w,
+                images.jpg 800w,
+                images.jpg 1200w
+                “
+                sizes=“
+                (max-width: 500px) 100vw,
+                (max-width: 700px) 50vw,
+                33vw
+                “
+                src=“images.jpg”
+                </p>
         </ul>
         <br>
         <h1>2)Exercises</h1>
-        <li><a href="exercise-2.html" style="font-size:2rem;">exercise-3</a></li>
+        <li><a href="exercise-3.html" style="font-size:2rem;">exercise-3</a></li>
     </div>
     <footer>
         <h2>
