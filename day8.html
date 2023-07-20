@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>day7</title>
+    <title>day8</title>
     <style>
         body {
-        
-            background-repeat: no-repeat;
-            background-size: cover;
+
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+           
         }
 
         .main {
@@ -22,7 +21,9 @@
         }
 
         A {
-            text-decoration: none;        }
+            text-decoration: none;
+          
+        }
 
         div.about {
             position: relative;
@@ -59,7 +60,8 @@
 
         li {
             font-weight: 600;
-            text-transform: capitalize;        }
+            text-transform: capitalize;
+        }
         .discription{
             text-transform: none;
         }
@@ -70,26 +72,23 @@
 </head>
 
 <body>
-    <h1 class="heading">day7</h1>
+    <h1 class="heading">day8</h1>
     <div class="overview">
         <h1>overview</h1>
-        <p class="discription">Hi,this is my 7rd day at Ryaz Training </p>
+        <p class="discription">Hi,this is my 8rd day at Ryaz Training and i learn about the proper way of writing css stylesheet,also how to provide better name in order to make it look nicer and understandable.</p>
     </div>
     <div class="main">
         <h1>1)Topics Covered</h1>
-        <ol><li>Transformations,Transition and Animation</li></ol>
         <ul>
-            <li>transformation:-</li>
-            <p>- rotate,scale(alter the sizes),skew(tilt effect),translate(10px,10px)-for short hand property of transformation.i.e. transform ,order matter</p>
-            <li>3-D transformation:-</li>
-            <p>- set perspective(in px,rem,etc) for z-line transform,can use rotatex,y,z(inbuilt),transform-origin</p>
-            <li>transition</li>
-            <p>easy-in,liner,easy-out,cubic-bezier(),set time for delay Animation</p>
-            <li>Animation</li>
-            <p>@keyframes {pop(animation name)} apply rules at different % and then add animation-name=eg-pop in container with animation-duration,also there are other properties as well.for eg-animation-delay,animation-iteration-count(number of time animation happen),animation-timing-function(easy-in,easy-out,cubic-bezier,animation-duration(alternate,reverse,normal)</p>
+            <li>sorting css styles</li>
+            <p>
+                first-start with the outter container and then move to inner one.
+            </p>
+            <li>variables</li>
+            <p>use pseudo-selector like :root{--apply-a-name(which can be used further in other selectors by apply var(--apply-a-name) </p>
+            <li>block Element modifiers</li>
+            <p>use--to seperate block, use __to seperate modifiers</p>
         </ul>
-        <h1>2)Exercises</h1>
-        <li><a href="exercise-5.html" style="font-size:2rem;">exercise-5</a></li>
     </div>
     <footer>
         <h2>
